@@ -23,11 +23,13 @@ SO THAT I can keep a list of books to purchase
 Nodemon
 Express
 React-Script
-Apollo Server
+Apollo-Server-express
 Graphql
 Mongodb
 Mongoose
 Dotenv
+graphql
+bcrypt
 
 # Issues
 
