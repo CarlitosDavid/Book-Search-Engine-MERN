@@ -4,6 +4,20 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import SearchBooks from "./pages/SearchBooks";
 import SavedBooks from "./pages/SavedBooks";
 import Navbar from "./components/Navbar";
+import { application } from "express";
+
+const express = require("express");
+const mongoose = require("mongoose");
+
+mongoose
+  .connect(
+    "mongodb+srv://CarlsCluster:<HFok1ZGc1G5hygCz>@cluster0.t0zz8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+  )
+  .then(() => console.log("connected to database"))
+  .then(() => {
+    App.listen(5000);
+  })
+  .catch((err) => console.log(err));
 
 const client = new ApolloClient({
   request: (operation) => {
